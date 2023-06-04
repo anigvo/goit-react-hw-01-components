@@ -1,0 +1,39 @@
+.list {
+  list-style: none;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 300px;
+  height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  outline: 1px solid green;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.status, .avatar {
+    margin-right: 30px;
+}
+.status {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.online {
+  composes: status;
+  background-color: green;
+}
+.offline {
+  composes: status;
+  background-color: red;
+}

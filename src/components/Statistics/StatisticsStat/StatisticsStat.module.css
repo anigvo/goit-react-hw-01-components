@@ -1,0 +1,21 @@
+.list {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label {
+    margin-bottom: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item:not(:last-child){
+    margin-right: 30px;
+}
