@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import css from './ProfileStats.module.css';
 
 export const ProfileStats = ({ followers, views, likes }) => {
@@ -20,8 +19,4 @@ export const ProfileStats = ({ followers, views, likes }) => {
   );
 };
 
-ProfileStats.propTypes = {
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
-};
+

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import css from './ProfileDescription.module.css';
 
 export const ProfileDescription = ({ avatar, username, tag, location }) => {
@@ -12,9 +11,4 @@ export const ProfileDescription = ({ avatar, username, tag, location }) => {
   );
 };
 
-ProfileDescription.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-};
+
