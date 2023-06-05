@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 
 import css from './Statistics.module.css';
 
-export const Statistics = ({ stats, title}) => {
+export const Statistics = ({ stats, title }) => {
   return (
     <section className={css.statistics}>
-      <StatisticsTitle title={title} />
+      {title ? <StatisticsTitle title={title} /> : ``}
       <StatisticsStat stats={stats} />
     </section>
   );
@@ -21,5 +21,5 @@ StatisticsStat.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ).isRequired,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
